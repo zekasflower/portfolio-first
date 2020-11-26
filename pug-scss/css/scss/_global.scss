@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Oswald:wght@500;700&family=Cairo:wght@400;700&display=swap");
+:root {
+  --light-color: rgb(246, 246, 246);
+  --dark-color: #1e272e;
+  --dark-color-50: #1e272e44;
+  --yellow-color: #ffd32a;
+  --red-color: #ff3f34;
+  --ob-travel: #222831;
+  --light-font: "Catamaran", sans-serif;
+  --bold-font: "Oswald", sans-serif;
+  --arabic-font: "Cairo", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: var(--light-font);
+  font-weight: 300;
+  color: var(--dark-color);
+}
+body {
+  background-color: var(--light-color);
+  min-width: 1920px;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--dark-color);
+  text-align: center;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+  ion-icon {
+    color: var(--light-color);
+    position: relative;
+    top: 0.8rem;
+  }
+}

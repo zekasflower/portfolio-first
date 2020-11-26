@@ -1,0 +1,61 @@
+.fed-transport {
+  height: 3240px;
+  min-height: 3240px;
+  padding: 5rem;
+  direction: rtl;
+  font-family: var(--arabic-font);
+  background: linear-gradient(-135deg, rgba(248, 249, 250, 1) 0%, #23518d 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+  .top-fed-transport {
+    direction: ltr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    h5 {
+      flex: 1;
+      font-size: 1.4rem;
+      &:last-of-type {
+        text-align: end;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .heading {
+    padding-top: 5rem;
+    h2 {
+      font-size: 7rem;
+      text-transform: uppercase;
+    }
+  }
+  .fed-transport-description {
+    float: right;
+    width: 25%;
+    border-bottom: 1px solid var(--dark-color-50);
+    text-align: center;
+    p {
+      display: inline-block;
+      font-size: 1.6rem;
+      text-align: justify;
+      line-height: 2;
+      opacity: 0.9;
+      padding-bottom: 0.3rem;
+      word-spacing: 0.3rem;
+    }
+  }
+  .fed-transport-gallery {
+    float: left;
+    position: relative;
+    top: 5rem;
+    z-index: 2;
+    img {
+      border-radius: 1rem;
+      width: 125rem;
+      box-shadow: 0 0 5rem -3.5rem var(--dark-color);
+    }
+  }
+}

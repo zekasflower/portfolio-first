@@ -1,0 +1,60 @@
+.gov-services {
+  height: 2160px;
+  min-height: 2160px;
+  padding: 5rem;
+  direction: rtl;
+  font-family: var(--arabic-font);
+  background: linear-gradient(-135deg, rgba(248, 249, 250, 1) 0%, #28a745 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+  .top-gov-services {
+    direction: ltr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    h5 {
+      flex: 1;
+      font-size: 1.4rem;
+      &:last-of-type {
+        text-align: end;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .heading {
+    padding-top: 3rem;
+    h2 {
+      font-size: 10rem;
+      text-transform: uppercase;
+    }
+  }
+  .gov-services-description {
+    margin-top: 5rem;
+    float: right;
+    width: 25%;
+    border-bottom: 1px solid var(--dark-color-50);
+    p {
+      display: inline-block;
+      font-size: 1.6rem;
+      text-align: justify;
+      line-height: 2;
+      opacity: 0.9;
+      padding-bottom: 0.3rem;
+    }
+  }
+  .gov-services-gallery {
+    float: left;
+    position: relative;
+    top: -10rem;
+    z-index: 2;
+    img {
+      border-radius: 1rem;
+      width: 125rem;
+      box-shadow: 0 0 5rem -3.5rem var(--dark-color);
+    }
+  }
+}

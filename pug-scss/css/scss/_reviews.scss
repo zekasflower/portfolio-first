@@ -1,0 +1,131 @@
+.reviews {
+  height: 1080px;
+  min-height: 1080px;
+  padding: 5rem;
+  position: relative;
+  overflow: hidden;
+  .top-reviews {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 6rem);
+    display: flex;
+    h5 {
+      flex: 1;
+      font-size: 1.4rem;
+      letter-spacing: 0.2rem;
+      &:last-of-type {
+        text-align: end;
+      }
+    }
+  }
+  .left {
+    position: relative;
+    z-index: -1;
+    float: left;
+    width: 50%;
+    height: 100%;
+    .heading {
+      padding-top: 5rem;
+      h2 {
+        font-size: 10rem;
+        text-transform: uppercase;
+        font-family: var(--bold-font);
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 2rem;
+          width: 100%;
+          height: 2rem;
+          background-color: var(--yellow-color);
+          z-index: -1;
+        }
+      }
+    }
+    .reviews-description {
+      margin-top: 5rem;
+      float: left;
+      width: 50%;
+      border-bottom: 1px solid var(--dark-color-50);
+      p {
+        display: inline-block;
+        font-size: 1.6rem;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+        opacity: 0.9;
+      }
+    }
+    .reviews-gallery {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      img {
+        border-radius: 1rem;
+        width: 100rem;
+      }
+    }
+  }
+  .right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .card {
+      background-color: var(--light-color);
+      width: 50rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      font-size: 1.6rem;
+      border-radius: 0.8rem;
+      box-shadow: 0 0 1rem -0.2rem var(--dark-color-50);
+      .card-title {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--dark-color-50);
+        display: flex;
+        h5 {
+          flex: 1;
+          font-family: var(--bold-font);
+          font-size: 3rem;
+          opacity: 0.8;
+        }
+        .icons {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          ion-icon {
+            font-size: 2rem;
+            margin: 0 0.2rem;
+            color: var(--yellow-color);
+            &.gray {
+              color: var(--dark-color-50);
+              opacity: 0.3;
+            }
+          }
+        }
+      }
+      .card-text {
+        text-align: justify;
+        letter-spacing: 0.08rem;
+        padding: 1.4rem 2rem 0 2rem;
+        opacity: 0.7;
+        q {
+          font-style: italic;
+        }
+      }
+      &:nth-of-type(even) {
+        align-self: flex-end;
+      }
+    }
+  }
+}

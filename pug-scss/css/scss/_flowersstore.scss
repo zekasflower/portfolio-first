@@ -1,0 +1,73 @@
+.flowers-store {
+  height: 5400px;
+  min-height: 5400px;
+  padding: 5rem;
+  position: relative;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 1) 0%, #f1c40f 100%);
+  z-index: -2;
+  .top-flowers-store {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    h5 {
+      flex: 1;
+      font-size: 1.4rem;
+      letter-spacing: 0.2rem;
+      &:last-of-type {
+        text-align: end;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .heading {
+    padding-top: 3rem;
+    h2 {
+      font-size: 10rem;
+      text-transform: uppercase;
+      font-family: var(--bold-font);
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2rem;
+        width: 100%;
+        height: 2rem;
+        background: linear-gradient(135deg, rgba(248, 249, 250, 1) 0%, #f1c40f 100%);
+        z-index: -1;
+      }
+    }
+  }
+  .flowers-store-description {
+    margin-top: 5rem;
+    float: left;
+    width: 25%;
+    border-bottom: 1px solid var(--dark-color-50);
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      display: inline-block;
+      font-size: 1.6rem;
+      text-align: justify;
+      letter-spacing: 0.2rem;
+      opacity: 0.9;
+    }
+  }
+  .flowers-store-gallery {
+    float: right;
+    position: relative;
+    top: 3rem;
+    right: 3rem;
+    z-index: 2;
+    img {
+      border-radius: 1rem;
+      width: 125rem;
+      box-shadow: 0 0 5rem -3.5rem var(--dark-color);
+    }
+  }
+}
